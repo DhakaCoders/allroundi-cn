@@ -153,4 +153,65 @@ nav.main-nav > ul > li.menu-item-has-children > a{
 
 }
 
+/* ================= */
+/* == responsive == */
+/* =============== */
 
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	nav.main-nav > ul{
+		margin: 0 -10px;
+	}
+	nav.main-nav > ul > li{
+		padding: 0 10px;
+	}
+	nav.main-nav > ul > li > a{
+		font-size: 17px;
+	}
+}
+
+@media(max-width: 991px){
+	.logo{
+		max-width: 310px;
+	}
+	.hdr-rgt{
+		padding-top: 15px;
+	}
+	nav.main-nav > ul{
+		margin: 0 -7px;
+	}
+	nav.main-nav > ul > li{
+		padding: 0 7px;
+	}
+	nav.main-nav > ul > li > a{
+		font-size: 16px;
+	}
+}
+
+@media(max-width: 767px){
+
+}
+
+@media(max-width: 575px){
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
+}

@@ -4,6 +4,17 @@
 .ftr-top-cntrl{
 	padding: 49px 0 34px;
 }
+.ftr-logo{
+	max-width: 496px;
+	width: 100%;
+}
+.ftr-logo a{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.ftr-logo a img{
+	width: 100%;
+}
 .ftr-top-btm-cntrl{
 	display: flex;
 	padding-top: 46px;
@@ -58,4 +69,76 @@
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
+}
+/* ftr-btm */
+.copyright{
+	background-color: #fff;
+	padding: 11px 0;
+}
+.copyright p{
+	color: #6f6f6f;
+	font-size: 11px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+/* ================= */
+/* == responsive == */
+/* =============== */
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	.contact-lft{
+		padding-left: 70px;
+	}
+	.ftr-adres span, .ftr-tel span, .ftr-mail span, .ftr-adres a, .ftr-tel a, .ftr-mail a, .ftr-menu ul li a{
+		font-size: 14px;
+	}
+}
+
+@media(max-width: 991px){
+	.ftr-logo{
+		max-width: 310px;
+	}
+	.ftr-adres span, .ftr-tel span, .ftr-mail span{
+		width: 50px;
+	}
+	.ftr-adres span, .ftr-tel span, .ftr-mail span, .ftr-adres a, .ftr-tel a, .ftr-mail a, .ftr-menu ul li a{
+		font-size: 13px;
+	}
+	.contact-lft{
+		padding-left: 32px;
+	}
+	.ftr-menu ul li:not(:last-child):after{
+		height: 10px;
+		margin-top: 1px;
+	}
+}
+
+@media(max-width: 767px){
+
+}
+
+@media(max-width: 575px){
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
 }
