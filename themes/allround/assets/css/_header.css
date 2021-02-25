@@ -1,20 +1,103 @@
-nav.main-nav ul{
-
+.header-inr{
+	background-color: #fff;
+	padding-top: 11px;
 }
-nav.main-nav ul li{
-	
+.hdr-top{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
-nav.main-nav ul li a{
-	
+.hdr-mail a{
+	padding-left: 19px;
+	padding-right: 42px;
+}
+.hdr-mail a, .hdr-tel a{
+	display: inline-block;
+	vertical-align: baseline;
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	color: #67676c;
+	line-height: 1.1;
+}
+.hdr-mail a:hover, .hdr-tel a:hover, nav.main-nav > ul > li > a:hover{
+	color: #e61c29;
+}
+.hdr-mail a:after, .hdr-tel a:after{
+	position: absolute;
+	content: "";
+	background-image: url('../images/mail.png');
+	background-repeat: no-repeat;
+	width: 14px;
+	height: 9px;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+.hdr-tel a{
+	padding-left: 12px;
+}
+.hdr-tel a:after{
+	width: 8px;
+	height: 12px;
+	background-image: url('../images/tel.png');
+	margin-top: -1px;
+}
+.hdr-btm{
+	display: flex;
+	align-items: center;
+	padding-bottom: 22px;
+}
+.hdr-lft{
+	margin-top: -5px;
+}
+.logo{
+	max-width: 500px;
+	width: 100%;
+}
+.logo a{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.logo a img{
+	width: 100%;
+}
+.hdr-rgt{
+	margin-left: auto;
+	padding-top: 25px;
 }
 nav.main-nav > ul{
-
+	display: flex;
+	margin: 0 -14px;
 }
 nav.main-nav > ul > li{
-
+	padding: 0 14px;
+	line-height: 22px;
+	position: relative;
+}
+nav.main-nav > ul > li:not(:last-child):after{
+	position: absolute;
+	content: "";
+	width: 2px;
+	height: 6px;
+	background-color: #787878;
+	right: 0;
+	top: 50%;
+	margin-right: -1px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
 }
 nav.main-nav > ul > li > a{
-
+	color: #343434;
+	font-size: 19px;
+	font-family: 'Catamaran', sans-serif;
+	font-weight: 600;
+	display: inline-block;
+	vertical-align: baseline;
 }
 
 nav.main-nav > ul > li.current-menu-item > a{

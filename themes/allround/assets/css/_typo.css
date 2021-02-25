@@ -6,21 +6,21 @@ h1,h2,h3,h4,h5,h6{
 	margin-top: 0;
 	margin-bottom: 20px;
 }
-h1,.fl-h1{
-	font-size: 35px;
+h1,.al-h1{
+	font-size: 37px;
 }
-h2,.fl-h2{
+h2,.al-h2{
+	font-size: 33px;
+}
+h3,.al-h3{
 	font-size: 30px;
 }
-h3,.fl-h3{
-	font-size: 28px;
-}
-h4,.fl-h4{
+h4,.al-h4{
 	font-size: 24px;
 }
-h5,.fl-h5{
+h5,.al-h5{
 	font-size: 20px;
 }
-h6,.fl-h6{
+h6,.al-h6{
 	font-size: 18px;
 }

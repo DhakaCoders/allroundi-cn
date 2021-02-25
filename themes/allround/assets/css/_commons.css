@@ -16,14 +16,17 @@ a, a:hover, a:focus, button:hover, button:focus{
 }
 
 body {
-    background: #f8f8f8;
-    color: #000000;
+    background: #fafafa;
+    color: #303037;
     font-size: 18px;
     line-height: 24px;
-     font-family: 'Candara';
+    font-family: 'Rubik', sans-serif;
+    /* font-family: 'Catamaran', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Montserrat', sans-serif; */
 }
 p{
-	line-height: 1.2;
+	line-height: 1.1;
 	margin-bottom: 15px;
 }
 ::selection {
@@ -96,7 +99,7 @@ Containers
 
 }
 .container{
-	max-width: 1200px;
+	max-width: 1152px;
 	width: 100%;
 }
 .container-md{
