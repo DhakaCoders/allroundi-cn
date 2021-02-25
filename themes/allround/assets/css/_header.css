@@ -21,9 +21,6 @@
 	color: #67676c;
 	line-height: 1.1;
 }
-.hdr-mail a:hover, .hdr-tel a:hover, nav.main-nav > ul > li > a:hover{
-	color: #e61c29;
-}
 .hdr-mail a:after, .hdr-tel a:after{
 	position: absolute;
 	content: "";

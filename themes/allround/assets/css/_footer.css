@@ -1,0 +1,61 @@
+.ftr-top{
+	background-color: #e61c29;
+}
+.ftr-top-cntrl{
+	padding: 49px 0 34px;
+}
+.ftr-top-btm-cntrl{
+	display: flex;
+	padding-top: 46px;
+}
+.ftr-contact{
+	display: flex;
+	max-width: 50%;
+}
+.ftr-adres, .ftr-tel, .ftr-mail {
+	display: flex;
+}
+.ftr-adres span, .ftr-tel span, .ftr-mail span,
+.ftr-adres a, .ftr-tel a, .ftr-mail a,
+.ftr-menu ul li a{
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	display: inline-block;
+	vertical-align: baseline;
+	color: #fdf0f1;
+	line-height: 17px;
+}
+.ftr-adres span, .ftr-tel span, .ftr-mail span {
+	width: 68px; 
+}
+.contact-lft{
+	padding-left: 127px;
+}
+.ftr-menu{
+	max-width: 50%;
+	margin-left: auto;
+	display: flex;
+	align-items: flex-end;
+}
+.ftr-menu ul{
+	display: flex;
+	margin: 0 -6px;
+}
+.ftr-menu ul li{
+	padding: 0 6px;
+	position: relative;
+	line-height: 17px;
+}
+.ftr-menu ul li:not(:last-child):after{
+	position: absolute;
+	content: "";
+	width: 1px;
+	height: 13px;
+	background-color: #fff;
+	right: 0;
+	top: 50%;
+	margin-right: -1px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
