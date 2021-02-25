@@ -183,10 +183,10 @@ nav.main-nav > ul > li.menu-item-has-children > a{
 
 @media(max-width: 991px){
 	.logo{
-		max-width: 310px;
+		max-width: 465px;
 	}
 	.hdr-rgt{
-		padding-top: 15px;
+		padding-top: 30px;
 	}
 	nav.main-nav > ul{
 		margin: 0 -7px;
@@ -196,6 +196,24 @@ nav.main-nav > ul > li.menu-item-has-children > a{
 	}
 	nav.main-nav > ul > li > a{
 		font-size: 16px;
+	}
+}
+
+@media(max-width: 900px){
+	.logo{
+		max-width: 365px;
+	}
+	.hdr-rgt{
+		padding-top: 20px;
+	}
+}
+
+@media(max-width: 800px){
+	.logo{
+		max-width: 330px;
+	}
+	.hdr-rgt{
+		padding-top: 19px;
 	}
 }
 

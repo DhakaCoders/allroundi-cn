@@ -30,6 +30,7 @@
 .ftr-adres a, .ftr-tel a, .ftr-mail a,
 .ftr-menu ul li a{
 	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 	font-size: 15px;
 	display: inline-block;
 	vertical-align: baseline;
@@ -109,7 +110,7 @@
 
 @media(max-width: 991px){
 	.ftr-logo{
-		max-width: 310px;
+		max-width: 465px;
 	}
 	.ftr-adres span, .ftr-tel span, .ftr-mail span{
 		width: 50px;
@@ -126,8 +127,54 @@
 	}
 }
 
-@media(max-width: 767px){
+@media(max-width: 900px){
+	.ftr-logo{
+		max-width: 365px;
+	}
+}
 
+@media(max-width: 800px){
+	.ftr-logo{
+		max-width: 330px;
+	}
+}
+
+@media(max-width: 767px){
+	.ftr-top-cntrl{
+		padding: 28px 0 37px
+	}
+	.ftr-top-btm-cntrl, .ftr-contact{
+		display: block;
+	}
+	.ftr-logo{
+		max-width: 430px;
+	}
+	.ftr-contact{
+		max-width: 100%;
+	}
+	.contact-lft{
+		padding-left: 0;
+	}
+	.ftr-menu{
+		display: none;
+	}
+	.ftr-adres{
+		padding-bottom: 22px;
+	}
+	.ftr-adres span, .ftr-tel span, .ftr-mail span,
+	.ftr-adres a, .ftr-tel a, .ftr-mail a,
+	.ftr-menu ul li a{
+		font-size: 22px;
+		line-height: 1;
+	}
+	.ftr-adres span, .ftr-tel span, .ftr-mail span{
+		width: 100px;
+	}
+	.copyright p{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		font-size: 17px;
+	}
 }
 
 @media(max-width: 575px){
