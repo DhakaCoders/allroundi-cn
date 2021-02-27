@@ -2,25 +2,18 @@
 All heading
 */
 h1,h2,h3,h4,h5,h6{
-	line-height: 1;	
+	line-height: 1.1;	
 	margin-top: 0;
 	margin-bottom: 20px;
+	font-family: 'Catamaran', sans-serif;
+	font-weight: 700;
 }
 h1,.al-h1{
-	font-size: 37px;
+	font-size: 37px; 
 }
 h2,.al-h2{
-	font-size: 33px;
-}
-h3,.al-h3{
 	font-size: 30px;
 }
-h4,.al-h4{
+h3,.al-h3{
 	font-size: 24px;
-}
-h5,.al-h5{
-	font-size: 20px;
-}
-h6,.al-h6{
-	font-size: 18px;
 }

@@ -73,7 +73,6 @@
 }
 /* ftr-btm */
 .copyright{
-	background-color: #fff;
 	padding: 11px 0;
 }
 .copyright p{
@@ -159,13 +158,13 @@
 		display: none;
 	}
 	.ftr-adres{
-		padding-bottom: 22px;
+		padding-bottom: 20px;
 	}
 	.ftr-adres span, .ftr-tel span, .ftr-mail span,
 	.ftr-adres a, .ftr-tel a, .ftr-mail a,
 	.ftr-menu ul li a{
 		font-size: 22px;
-		line-height: 1;
+		line-height: 1.2;
 	}
 	.ftr-adres span, .ftr-tel span, .ftr-mail span{
 		width: 100px;
@@ -182,8 +181,14 @@
 }
 
 @media(max-width: 479px){
-
-
+	.ftr-adres span, .ftr-tel span, .ftr-mail span,
+	.ftr-adres a, .ftr-tel a, .ftr-mail a,
+	.ftr-menu ul li a{
+		font-size: 19px;
+	}
+	.copyright p{
+		font-size: 12px;
+	}
 }
 
 @media(max-width: 359px){

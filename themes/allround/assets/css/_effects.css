@@ -1,7 +1,12 @@
 /**
 All Transitions
 */
-a,input,img,textarea,button,svg,i,.dft-transition{
+a, input, img, textarea, button, svg, i, .dft-transition,
+.hamburger-btn,
+.hamburger-btn span,
+.close-icon span:nth-child(1),
+.close-icon span:nth-child(2),
+.close-icon span:nth-child(3){
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -26,9 +31,18 @@ nav.main-nav ul li:hover > a,
 nav.main-nav ul li.current-menu-item a{
 	
 }
-.hdr-mail a:hover, 
+.hdr-mail a:hover, a:hover,
 .hdr-tel a:hover, 
-nav.main-nav > ul > li > a:hover,
-nav.main-nav > ul > li.menu-item-has-children >	ul.sub-menu > li a:hover{
+nav.main-nav > ul > li > a:hover, 
+nav.main-nav > ul > li.menu-item-has-children:hover > a,
+nav.main-nav > ul > li.menu-item-has-children >	ul.sub-menu > li a:hover,
+.breadcumbs-inner ul li a:hover, .breadcumbs-inner ul li.active a{
 	color: #e61c29;
+}
+
+.ftr-adres a:hover,
+.ftr-tel a:hover,
+.ftr-mail a:hover, 
+.ftr-menu ul li a:hover{
+	opacity: .7;
 }

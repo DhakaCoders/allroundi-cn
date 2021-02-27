@@ -1,33 +1,46 @@
 /**
 Commons
 */
-*, *:focus,.btn,.btn:focus{
+*:focus, .btn, .btn:focus{
 	outline: 0!important;
 	text-decoration: none;
 }
 
-a, button, input{
+button, input{
 	outline: 0;
 	border: 0;
-}
-a, a:hover, a:focus, button:hover, button:focus{
+} 
+a:hover, a:focus, button:hover, button:focus, ul li a, .hdr-mail a, .hdr-tel a,
+.ftr-adres a, .ftr-tel a, .ftr-mail a{
 	text-decoration: none;
 	outline: 0;
 }
-
+a{
+	display:inline-block;
+	vertical-align: baseline;
+	text-decoration: underline;
+	color: #272878;
+	font-family: 'Catamaran', sans-serif;
+	font-weight: 400;
+}
+strong{
+}
 body {
     background: #fafafa;
     color: #303037;
     font-size: 18px;
     line-height: 24px;
     font-family: 'Rubik', sans-serif;
+    font-weight: 400;
     /* font-family: 'Catamaran', sans-serif; */
     /* font-family: 'Roboto', sans-serif; */
     /* font-family: 'Montserrat', sans-serif; */
 }
 p{
 	line-height: 1.1;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 }
 ::selection {
   color: #fff;
@@ -67,6 +80,13 @@ Containers fluid
 /**
 Containers
 */
+
+.page-body-cntrl, .page-body-cntrl-2{
+	max-width: 1202px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+}
 .container-xlg,
 .container-lg,
 .container-md,
@@ -190,6 +210,7 @@ ul.sub-menu li,
 	margin: 0;
 	list-style: none;
 	margin: 0;
+	text-transform: initial;
 }
 .reset-list li:before,
 ul.sub-menu li:before,
@@ -197,8 +218,37 @@ ul.sub-menu li:before,
 .reset-slect ul li:before{
 	content: none!important;
 }
-
-
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-left: 0;
+	padding-bottom: 50px;
+}
+ul li {
+	padding: 0 0 0 24px;
+	margin-bottom: 5px;
+	text-transform: capitalize;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	position: relative;
+}
+ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 1px;
+    background-color: #303037;
+}
+.main-cnt-inner h2{
+	margin-bottom: 28px;
+}
+.height-1129{
+	height: 1129px;
+}
 
 
 /**
