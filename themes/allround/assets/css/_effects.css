@@ -28,11 +28,12 @@ a:hover{
 	text-decoration: none;
 }
 nav.main-nav ul li:hover > a,
-nav.main-nav ul li.current-menu-item a{
+{
 	
 }
 .hdr-mail a:hover, a:hover,
 .hdr-tel a:hover, 
+nav.main-nav ul li.current-menu-item a,
 nav.main-nav > ul > li > a:hover, 
 nav.main-nav > ul > li.menu-item-has-children:hover > a,
 nav.main-nav > ul > li.menu-item-has-children >	ul.sub-menu > li a:hover,

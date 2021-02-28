@@ -66,6 +66,12 @@
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 }
+.page-cnt-inner h2{
+	margin-bottom: 28px;
+}
+.height-1129{
+	height: 1129px;
+}
 
 /* ================= */
 /* == responsive == */

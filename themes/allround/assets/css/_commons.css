@@ -24,6 +24,8 @@ a{
 	font-weight: 400;
 }
 strong{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
 }
 body {
     background: #fafafa;
@@ -37,8 +39,8 @@ body {
     /* font-family: 'Montserrat', sans-serif; */
 }
 p{
-	line-height: 1.1;
-	margin-bottom: 25px;
+	line-height: 1.2;
+	margin-bottom: 15px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 }
@@ -226,7 +228,7 @@ ul{
 	padding-bottom: 50px;
 }
 ul li {
-	padding: 0 0 0 24px;
+	padding: 4px 0 10px 24px;
 	margin-bottom: 5px;
 	text-transform: capitalize;
 	font-family: 'Roboto', sans-serif;
@@ -242,12 +244,6 @@ ul li::before {
     width: 4px;
     height: 1px;
     background-color: #303037;
-}
-.main-cnt-inner h2{
-	margin-bottom: 28px;
-}
-.height-1129{
-	height: 1129px;
 }
 
 
