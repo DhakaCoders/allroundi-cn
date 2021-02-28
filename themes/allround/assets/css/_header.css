@@ -1,3 +1,9 @@
+.home .page-body-cntrl .header .header-inr{
+	border-bottom: none!important;
+}
+.home .page-body-cntrl .header{
+	padding-bottom: 0;
+}
 .header-inr{
 	padding-top: 11px;
 }

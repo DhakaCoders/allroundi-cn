@@ -1,3 +1,10 @@
+.header-inr{
+	border-bottom: 1px solid #ebebeb;
+}
+.header{
+	padding-bottom: 15px;
+}
+
 .slick-slider ul.slick-dots{
 	position: static;
 	height: 16px;
