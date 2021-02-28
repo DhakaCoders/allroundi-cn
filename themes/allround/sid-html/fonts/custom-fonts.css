@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'MerriweatherRegular';
+    src: url('MerriweatherRegular/MerriweatherRegular.eot');
+    src: url('MerriweatherRegular/MerriweatherRegular.eot') format('embedded-opentype'),
+         url('MerriweatherRegular/MerriweatherRegular.woff2') format('woff2'),
+         url('MerriweatherRegular/MerriweatherRegular.woff') format('woff'),
+         url('MerriweatherRegular/MerriweatherRegular.ttf') format('truetype'),
+         url('MerriweatherRegular/MerriweatherRegular.svg#MerriweatherRegular') format('svg');
+}
+
+
+@font-face {
+    font-family: 'MerriweatherBold';
+    src: url('MerriweatherBold/MerriweatherBold.eot');
+    src: url('MerriweatherBold/MerriweatherBold.eot') format('embedded-opentype'),
+         url('MerriweatherBold/MerriweatherBold.woff2') format('woff2'),
+         url('MerriweatherBold/MerriweatherBold.woff') format('woff'),
+         url('MerriweatherBold/MerriweatherBold.ttf') format('truetype'),
+         url('MerriweatherBold/MerriweatherBold.svg#MerriweatherBold') format('svg');
+}
+
+
+@font-face {
+    font-family: 'MerriweatherItalic';
+    src: url('MerriweatherItalic/MerriweatherItalic.eot');
+    src: url('MerriweatherItalic/MerriweatherItalic.eot') format('embedded-opentype'),
+         url('MerriweatherItalic/MerriweatherItalic.woff2') format('woff2'),
+         url('MerriweatherItalic/MerriweatherItalic.woff') format('woff'),
+         url('MerriweatherItalic/MerriweatherItalic.ttf') format('truetype'),
+         url('MerriweatherItalic/MerriweatherItalic.svg#MerriweatherItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'MerriweatherLight';
+    src: url('MerriweatherLight/MerriweatherLight.eot');
+    src: url('MerriweatherLight/MerriweatherLight.eot') format('embedded-opentype'),
+         url('MerriweatherLight/MerriweatherLight.woff2') format('woff2'),
+         url('MerriweatherLight/MerriweatherLight.woff') format('woff'),
+         url('MerriweatherLight/MerriweatherLight.ttf') format('truetype'),
+         url('MerriweatherLight/MerriweatherLight.svg#MerriweatherLight') format('svg');
+}
+
+
+@font-face {
+    font-family: 'MerriweatherSansLight';
+    src: url('MerriweatherSansLight/MerriweatherSansLight.eot');
+    src: url('MerriweatherSansLight/MerriweatherSansLight.eot') format('embedded-opentype'),
+         url('MerriweatherSansLight/MerriweatherSansLight.woff2') format('woff2'),
+         url('MerriweatherSansLight/MerriweatherSansLight.woff') format('woff'),
+         url('MerriweatherSansLight/MerriweatherSansLight.ttf') format('truetype'),
+         url('MerriweatherSansLight/MerriweatherSansLight.svg#MerriweatherSansLight') format('svg');
+}
+
+
+
+@font-face {
+    font-family: 'MerriweatherLightIt';
+    src: url('MerriweatherLightIt/MerriweatherLightIt.eot');
+    src: url('MerriweatherLightIt/MerriweatherLightIt.eot') format('embedded-opentype'),
+         url('MerriweatherLightIt/MerriweatherLightIt.woff2') format('woff2'),
+         url('MerriweatherLightIt/MerriweatherLightIt.woff') format('woff'),
+         url('MerriweatherLightIt/MerriweatherLightIt.ttf') format('truetype'),
+         url('MerriweatherLightIt/MerriweatherLightIt.svg#MerriweatherLightIt') format('svg');
+}
+
+@font-face {
+    font-family: 'MerriweatherBoldIt';
+    src: url('MerriweatherBoldIt/MerriweatherBoldIt.eot');
+    src: url('MerriweatherBoldIt/MerriweatherBoldIt.eot') format('embedded-opentype'),
+         url('MerriweatherBoldIt/MerriweatherBoldIt.woff2') format('woff2'),
+         url('MerriweatherBoldIt/MerriweatherBoldIt.woff') format('woff'),
+         url('MerriweatherBoldIt/MerriweatherBoldIt.ttf') format('truetype'),
+         url('MerriweatherBoldIt/MerriweatherBoldIt.svg#MerriweatherBoldIt') format('svg');
+}

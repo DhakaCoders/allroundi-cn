@@ -17,6 +17,9 @@
 	.show-lg{
 		display: block!important;
 	}
+	.page-404 h1{
+		font-size: 64px;
+	}
 
 }
 
@@ -26,6 +29,9 @@
 	}
 	.show-md{
 		display: block!important;
+	}
+	.page-404 h1{
+		font-size: 44px;
 	}
 	
 }
@@ -69,6 +75,12 @@
 	.page-body-cntrl{
 		margin-top: 8px;	
 	}
+	.pull-left{
+		order: 2;
+	}
+	.pull-right{
+		order: 1;
+	}
 }
 
 @media(max-width: 575px){
@@ -102,6 +114,9 @@
 	}
 	p{
 		line-height: 1.2;
+	}
+	.page-404 h1{
+		font-size: 38px;
 	}
 
 }
