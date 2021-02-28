@@ -64,9 +64,6 @@ single post
 	font-size: 17px;
 	line-height: 20px;
 }
-.post-des a{
-	color: #262626;
-}
 .right-sidebar{
 	padding-right: 40px;
 }
@@ -94,12 +91,6 @@ single post
 }
 .sidebar-widget ul li a{
 	color: inherit;
-}
-.sidebar-widget ul li a:hover,
-.post-des h4 a:hover,
-.post-des a:hover{
-	color: #43574c;
-	text-decoration: none;
 }
 
 .sp-detail{
@@ -136,6 +127,7 @@ single post
 	left: 14px;
 	top: 12px;
 	margin-top: 0;
+	cursor: pointer;
 }
 
 .right-sidebar .screen-reader-text{

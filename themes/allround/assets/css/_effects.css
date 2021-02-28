@@ -37,7 +37,8 @@ nav.main-nav ul li.current-menu-item a,
 nav.main-nav > ul > li > a:hover, 
 nav.main-nav > ul > li.menu-item-has-children:hover > a,
 nav.main-nav > ul > li.menu-item-has-children >	ul.sub-menu > li a:hover,
-.breadcumbs-inner ul li a:hover, .breadcumbs-inner ul li.active a{
+.breadcumbs-inner ul li a:hover, .breadcumbs-inner ul li.active a,
+.sidebar-widget ul li a:hover, .post-des h4 a:hover, .post-des a:hover{
 	color: #e61c29;
 }
 

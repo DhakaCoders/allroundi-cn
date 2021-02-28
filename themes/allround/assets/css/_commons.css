@@ -11,7 +11,9 @@ button, input{
 	border: 0;
 } 
 a:hover, a:focus, button:hover, button:focus, ul li a, .hdr-mail a, .hdr-tel a,
-.ftr-adres a, .ftr-tel a, .ftr-mail a{
+.ftr-adres a, .ftr-tel a, .ftr-mail a,
+.sidebar-widget ul li a, .post-des h4 a, .post-des a,
+.sidebar-widget ul li a:hover, .post-des h4 a:hover, .post-des a:hover{
 	text-decoration: none;
 	outline: 0;
 }
