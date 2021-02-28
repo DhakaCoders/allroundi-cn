@@ -33,6 +33,26 @@
 	.page-404 h1{
 		font-size: 44px;
 	}
+	.post-img {
+    	width: 100%;
+    	margin-right: 0;
+	}
+	.post-img a {
+    	display: inline-block;
+    	vertical-align: baseline;
+	}
+	.post-img a img {
+    	width: auto;
+	}
+	.right-sidebar {
+    	padding-left: 0;
+	}
+	.mgleftm {
+    	margin-left: 0;
+	}
+	.post-des{
+		width: 100%;
+	}
 	
 }
 
@@ -76,10 +96,21 @@
 		margin-top: 8px;	
 	}
 	.pull-left{
-		order: 2;
+		order: initial;
 	}
 	.pull-right{
-		order: 1;
+		order: initial;
+	}
+	.search {
+    	max-width: 300px;
+    	width: 100%;
+	}
+	.right-sidebar{
+		padding-right: 0;
+	}
+	.sidebar-widget h4{
+		display: inline-block;
+		vertical-align: baseline;
 	}
 }
 
