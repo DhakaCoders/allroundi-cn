@@ -40,7 +40,7 @@
 .ftr-adres span, .ftr-tel span, .ftr-mail span {
 	width: 68px; 
 }
-.contact-lft{
+.ftr-col-2{
 	padding-left: 127px;
 }
 .ftr-menu{
@@ -61,9 +61,10 @@
 .ftr-menu ul li:not(:last-child):after{
 	position: absolute;
 	content: "";
-	width: 1px;
+	width: 2px;
 	height: 13px;
-	background-color: #fff;
+	background-image: url('../images/ftr-menu-border.png');
+	background-repeat: no-repeat;
 	right: 0;
 	top: 50%;
 	margin-right: -1px;
@@ -99,7 +100,7 @@
 }
 
 @media(max-width: 1199px){
-	.contact-lft{
+	.ftr-col-2{
 		padding-left: 70px;
 	}
 	.ftr-adres span, .ftr-tel span, .ftr-mail span, .ftr-adres a, .ftr-tel a, .ftr-mail a, .ftr-menu ul li a{
@@ -117,7 +118,7 @@
 	.ftr-adres span, .ftr-tel span, .ftr-mail span, .ftr-adres a, .ftr-tel a, .ftr-mail a, .ftr-menu ul li a{
 		font-size: 13px;
 	}
-	.contact-lft{
+	.ftr-col-2{
 		padding-left: 32px;
 	}
 	.ftr-menu ul li:not(:last-child):after{
@@ -151,7 +152,7 @@
 	.ftr-contact{
 		max-width: 100%;
 	}
-	.contact-lft{
+	.ftr-col-2{
 		padding-left: 0;
 	}
 	.ftr-menu{

@@ -42,7 +42,7 @@ body {
 }
 p{
 	line-height: 1.2;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 }
@@ -85,7 +85,7 @@ Containers fluid
 Containers
 */
 
-.page-body-cntrl, .page-body-cntrl-2{
+.page-body-cntrl{
 	max-width: 1202px;
 	width: 100%;
 	margin: 0 auto;
@@ -228,10 +228,11 @@ ul{
 	padding: 0;
 	padding-left: 0;
 	padding-bottom: 50px;
+	padding-top: 10px;
 }
 ul li {
-	padding: 4px 0 10px 24px;
-	margin-bottom: 5px;
+	padding: 0 0 0 24px;
+	margin: 4px 0 10px 0;
 	text-transform: capitalize;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
@@ -243,9 +244,10 @@ ul li::before {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 4px;
+    width: 5px;
     height: 1px;
-    background-color: #303037;
+    background-image: url('../images/li-dash.png');
+    background-repeat: no-repeat;
 }
 
 
