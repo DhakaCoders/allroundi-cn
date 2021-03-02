@@ -10,7 +10,7 @@
 }
 .desktop-bnr-cntrl{
 	width:100%;
-	min-height:485px;	
+	height:485px;	
 }
 .bnr-video{
 	position: relative;
@@ -123,7 +123,7 @@
 
 @media(max-width: 991px){
 	.desktop-bnr-cntrl{
-		min-height: 380px;
+		height: 380px;
 	}
 }
 
@@ -140,7 +140,7 @@
 
 	.mobile-bnr-cntrl{
 		position: relative;
-		min-height: 330px;
+		height: 330px;
 		display: block;
 		width: 100%;
 	}
@@ -149,24 +149,24 @@
 
 @media(max-width: 639px){
 	.mobile-bnr-cntrl{
-		min-height: 300px;
+		height: 300px;
 	}
 }
 
 @media(max-width: 575px){
 	.mobile-bnr-cntrl{
-		min-height: 274px;
+		height: 274px;
 	}
 }
 
 @media(max-width: 479px){
 	.mobile-bnr-cntrl{
-		min-height: 200px;
+		height: 200px;
 	}
 }
 
 @media(max-width: 359px){
 	.mobile-bnr-cntrl{
-		min-height: 176px;
+		height: 176px;
 	}
 }
