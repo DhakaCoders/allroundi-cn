@@ -10,12 +10,22 @@
 .bnr-video video{
 	width: 100%;
 }
-.bnr-video video{
+.desktop-bnr-cntrl{
 	width:100%;
-	height:485px;	
+	min-height:485px;	
 }
-.mobile-bnr{
+.has-video, .bnr-video video{
+	width: 100%;
+	height: 100%;
+}
+.mobile-bnr-cntrl{
 	display: none;
+	}
+.has-video .bnr-img{
+	display: none;
+}
+.bdc{
+	position: relative;
 }
 
 .breadcumbs{
@@ -110,39 +120,47 @@
 	.main-content, .page-content{
 		min-height: 500px;
 	}
-	.desktop-bnr{
+	.desktop-bnr-cntrl{
 		display: none;
 	}
-	.mobile-bnr{
+	.mobile-bnr-cntrl{
 		display: block;
 	}
-	.xs-bnr-video video{
-		height: 330px;
+	.has-video .xs-bnr-img{
+		display: none;
+	}
+	.mobile-bnr-cntrl{
+		min-height: 330px;
 		display: block;
 		width: 100%;
 	}
+	.has-video, .xs-bnr-video{
+		width: 100%;
+		height: 100%;
+	}
+
 }
 
 @media(max-width: 639px){
-	.xs-bnr-video video{
-		height: 300px;
+	.mobile-bnr-cntrl{
+		min-height: 300px;
 	}
 }
 
 @media(max-width: 575px){
-	.xs-bnr-video video{
-		height: 274px;
+	.mobile-bnr-cntrl{
+		min-height: 274px;
 	}
 }
 
 @media(max-width: 479px){
-	.xs-bnr-video video{
-		height: 200px;
+	.mobile-bnr-cntrl{
+		min-height: 200px;
 	}
 }
 
 @media(max-width: 359px){
-	.xs-bnr-video video{
-		height: 176px;
+	.mobile-bnr-cntrl{
+		min-height: 176px;
 	}
 }
