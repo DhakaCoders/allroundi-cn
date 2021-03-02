@@ -205,6 +205,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
   }, false);
 })();
 
+
+
+/*if( $('#vdo-lg').length ){
+  document.getElementById('vdo-lg').play();
+}
+if( $('#vdo-xs').length ){
+  document.getElementById('vdo-xs').play();
+}*/
     new WOW().init();
 
 })(jQuery);
