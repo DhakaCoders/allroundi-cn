@@ -20,6 +20,12 @@
 	.page-404 h1{
 		font-size: 64px;
 	}
+	.post-items{
+		max-width: 65%;
+	}
+	.right-sidebar{
+		max-width: 35%;
+	}
 
 }
 
@@ -52,6 +58,12 @@
 	}
 	.post-des{
 		width: 100%;
+	}
+	.post-items{
+		max-width: 60%;
+	}
+	.right-sidebar{
+		max-width: 40%;
 	}
 	
 }
@@ -96,17 +108,13 @@
 		display: block;
 	}
 	.page-content {
-	    padding: 50px 0 50px;
+	    padding: 0 0 50px;
 	}
 	.post-items{
 		max-width: 100%;
 	}
 	.right-sidebar{
 		max-width: 100%;
-	}
-	.search {
-    	max-width: 300px;
-    	width: 100%;
 	}
 	.right-sidebar{
 		padding-right: 0;

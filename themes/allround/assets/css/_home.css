@@ -2,7 +2,7 @@
 /* == banner-sec == */
 /* =============== */
 .banner-sec{
-	padding-bottom: 20px;
+	margin-bottom: 20px;
 	overflow: hidden;
 }
 .bnr-img img{
@@ -98,7 +98,7 @@
 }
 .main-content, .page-content{
 	min-height: 1425px;
-	padding-bottom: 20px;
+	padding-bottom: 100px;
 }
 
 /* ================= */

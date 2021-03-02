@@ -115,11 +115,9 @@
 	.ftr-adres span, .ftr-tel span, .ftr-mail span{
 		width: 50px;
 	}
-	.ftr-adres span, .ftr-tel span, .ftr-mail span, .ftr-adres a, .ftr-tel a, .ftr-mail a, .ftr-menu ul li a{
-		font-size: 13px;
-	}
+	
 	.ftr-col-2{
-		padding-left: 32px;
+		padding-left: 50px;
 	}
 	.ftr-menu ul li:not(:last-child):after{
 		height: 10px;
@@ -132,10 +130,24 @@
 		max-width: 365px;
 	}
 }
+@media(max-width: 875px){
+	.ftr-adres span, .ftr-tel span, .ftr-mail span, .ftr-adres a, .ftr-tel a, .ftr-mail a, .ftr-menu ul li a{
+		font-size: 14px;
+	}
+	.ftr-col-2{
+		padding-left: 30px;
+	}
+}
 
 @media(max-width: 800px){
 	.ftr-logo{
 		max-width: 330px;
+	}
+}
+
+@media(max-width: 800px){
+	.ftr-adres span, .ftr-tel span, .ftr-mail span, .ftr-adres a, .ftr-tel a, .ftr-mail a, .ftr-menu ul li a{
+		font-size: 13px;
 	}
 }
 
