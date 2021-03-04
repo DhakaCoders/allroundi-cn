@@ -70,6 +70,10 @@
 	align-items: center;
 
 }
+.fl-pagi-cntlr ul li:first-child span,
+.fl-pagi-cntlr ul li:first-child a{
+	border-left: 1px solid #000;
+}
 .fl-pagi-cntlr ul li a,
 .page-numbers.dots,
 .fl-pagi-cntlr ul li span{
@@ -133,3 +137,138 @@
 	opacity: .5;
 }
 /*== pagination end ==*/
+
+
+/**
+---------------------
+Start blog
+---------------------
+*/
+.page-content{
+	padding: 0 0 150px;
+}
+.page-404-wrp {
+    margin-top: 40px;
+}
+
+/* 
+404
+ */
+.page-404 {
+    min-height: 400px;
+}
+.page-404 h1{
+	font-size: 73px;
+}
+.page-404 h3{
+	font-size: 28px;
+}
+
+/* index page */
+.posts-section{
+	padding-top: 0;
+}
+.post-sec-cntrl{
+	display: flex;
+}
+.post-items{
+	max-width: 70%;
+	width: 1000%;
+	order: 2;
+}
+.post-img a{
+	display: block;
+}
+.post-img a img{
+	width: 100%;
+}
+.post-item{
+	padding-bottom: 45px;
+}
+.post-img {
+    float: left;
+    width: 15%;
+    margin-right: 3%;
+    margin-bottom: 25px;
+}
+.post-des{
+	float: left;
+	width: 80%;
+	line-height: 20px;
+}
+.right-sidebar{
+	padding-right: 40px;
+	max-width: 30%;
+	width: 100%;
+	order: 1;
+}
+
+.sidebar-widget{
+	padding-bottom: 40px;
+	color: #1c2b35
+}
+.post-des h4,.sidebar-widget h4{
+	margin: 0;
+	padding-bottom: 10px;
+	margin-top: -3px
+}
+.sidebar-widget h4{
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 15px;
+}
+.sidebar-widget ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.sidebar-widget ul li{
+	padding-bottom: 5px;
+	font-size: 16px;
+}
+.sidebar-widget ul li a{
+	color: inherit;
+}
+
+.sp-detail{
+	width: 70%;
+	margin-right: 0;
+}
+.post-des.sp-detail{
+	padding-bottom: 15px;
+}
+/*search*/
+.right-sidebar .widget_search{
+	position: relative;
+	margin-bottom: 40px;
+}
+.right-sidebar  .widget_search input[type="search"]{
+	border: 1px solid #E6E6E6;
+	padding: 8px 10px 8px 40px;
+	width: 100%;
+	height: 40px;
+	border-radius: none;
+	margin-top: 0;
+}
+.search input[type="search"]:focus{
+	border: 1px solid #000;
+	border-radius: 2px;
+}
+.right-sidebar .widget_search input[type="submit"]{
+	position: absolute;
+	background: url(../images/search-icon.png);
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 15px;
+	border: 0;
+	left: 14px;
+	top: 12px;
+	margin-top: 0;
+	cursor: pointer;
+}
+
+.right-sidebar .screen-reader-text{
+	display: none;
+}
+.right-sidebar .widget_search label{
+	width: 100%;
+}
