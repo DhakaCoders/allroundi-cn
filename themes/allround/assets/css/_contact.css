@@ -32,8 +32,12 @@
 }
 .input-field input[type="text"]:focus,
 .input-field input[type="email"]:focus,
-.input-field textarea:focus{
-	border-color: #807c7c;
+.input-field textarea:focus,
+.right-sidebar .sidebar-widget input[type="search"]:focus{
+	border-color: #807c7c!important;
+}
+.right-sidebar .sidebar-widget input[type="submit"]:hover{
+	opacity: .7;
 }
 .input-field textarea{
 	height: 200px;

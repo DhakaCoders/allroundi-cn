@@ -252,6 +252,7 @@ Start blog
 	height: 40px;
 	border-radius: none;
 	margin-top: 0;
+	font-size: 15px;
 }
 .search input[type="search"]:focus{
 	border: 1px solid #000;
@@ -268,6 +269,9 @@ Start blog
 	top: 12px;
 	margin-top: 0;
 	cursor: pointer;
+	text-indent: -99999px;
+	font-size: 0;
+	line-height: 0;
 }
 
 .right-sidebar .screen-reader-text{
