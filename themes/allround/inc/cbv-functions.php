@@ -80,11 +80,6 @@ add_filter('tiny_mce_before_init', 'myextensionTinyMCE' );
  }
  add_filter('excerpt_more', 'new_excerpt_more');
 
-// tn custom excerpt length
-function tn_custom_excerpt_length( $length ) {
-return 50;
-}
-add_filter( 'excerpt_length', 'tn_custom_excerpt_length', 999 );
 
 function cbv_get_excerpt( $text, $limit = 20 ){
   $excerpt = explode(' ', $text, $limit);
@@ -111,6 +106,7 @@ function cbv_limit_excerpt( $limit = 52 ){
   $excerpt .= $link;
   return $excerpt;
 }
+
 
 function cbv_table( $table){
   if ( ! empty ( $table ) ) {
@@ -205,4 +201,28 @@ function get_title_by_page_template( $pagetemplate ){
       }
     }
   return $pagetitle;
+}
+
+
+add_filter( 'get_the_excerpt', 'excerpt_read_more_all_cases' );
+
+function excerpt_read_more_all_cases( $text ) {
+  global $post;
+  $raw = $post->post_content;
+  $excerpt_length = apply_filters( 'excerpt_length', 55 );
+  $raw_to_more = substr( $raw, 0, strpos( $raw, '<!--more-->' ) );
+  $excerpt_of_raw = wp_trim_words( $raw, $excerpt_length, ''); 
+  $excerpt_of_raw_to_more = wp_trim_words( $raw_to_more, $excerpt_length, ''); 
+
+// CHECKING FOR MANUALLY WRITTEN EXCERPT
+  if( has_excerpt() ) { 
+    $text .= '<a href="'. get_permalink($post->ID) . '">' . __( ' ....more >>', THEME_NAME ) . '</a>';
+// CHECKING FOR EXCERPT BEING SHORT BY THE 'MORE TAG'
+  } elseif( strpos( $raw, '<!--more-->' ) && strlen( $excerpt_of_raw_to_more ) < strlen( $excerpt_of_raw ) ) {
+    $text .= '<a href="'. get_permalink($post->ID) . '">' . __( ' ....more >>', THEME_NAME ) . '</a>'; 
+// CHECKING FOR EXCERPT BEING SHORT BECAUSE OIF SHORT CONTENT
+  } elseif( strlen( $text ) == strlen( $excerpt_of_raw ) ) {
+    $text .= '<a href="'. get_permalink($post->ID) . '">' . __( ' ....more >>', THEME_NAME ) . '</a>';
+  }
+  return $text;
 }

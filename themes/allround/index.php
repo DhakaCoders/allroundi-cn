@@ -2,31 +2,7 @@
 get_header(); 
 $thisID = get_option( 'page_for_posts' );
 ?>
-<section class="breadcumbs">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="breadcumbs-inner">
-            <ul class="clearfix reset-list">
-              <li>
-                <a href="#" class="fl-home-icon">
-                  <span class="item">home</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="item">page</span>
-                </a>
-              </li>
-              <li class="active">
-                <a href="#"><span>subpage</span></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
+<?php get_template_part('templates/template', 'breadcrumbs'); ?>
 <?php 
  $showhide_sidebar = get_field('sidebarshowhide', $thisID);
   if( $showhide_sidebar )
@@ -46,9 +22,9 @@ $thisID = get_option( 'page_for_posts' );
                 while(have_posts()): the_post(); 
                 $attach_id = get_post_thumbnail_id(get_the_ID());
                 if( !empty($attach_id) )
-                  $blog_tag = cbv_get_image_tag($attach_id,'bloggrid');
+                  $blog_tag = cbv_get_image_tag($attach_id,'thumbnail');
                 else
-                  $blog_tag = '<img src="'.THEME_URI .'/assets/images/BadkamerNoorderdiep-150x150.jpg" alt="'.get_the_title().'">';
+                  $blog_tag = '<img src="'.THEME_URI .'/assets/images/dft-postimg.jpg" alt="'.get_the_title().'">';
               ?>
               <article class="post-item clearfix">
                 <div class="post-img">
@@ -85,8 +61,8 @@ $thisID = get_option( 'page_for_posts' );
               echo paginate_links( array(
                 'base'      => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
                 'type'      => 'list',
-                'prev_text' => __('«'),
-                'next_text' => __('»'),
+                'prev_text' => __(''),
+                'next_text' => __(''),
                 'format'    => '?paged=%#%',
                 'current'   => $current,
                 'total'     => $wp_query->max_num_pages
