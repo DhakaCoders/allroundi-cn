@@ -39,6 +39,7 @@
 }
 .ftr-adres span, .ftr-tel span, .ftr-mail span {
 	width: 68px; 
+	padding-right: 10px;
 }
 .ftr-col-2{
 	padding-left: 127px;

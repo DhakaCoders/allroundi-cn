@@ -55,7 +55,7 @@
 	content: "";
 	background-image: url('../images/rgt-arrow.png');
 	background-repeat: no-repeat;
-	width: 5px;
+	width: 6px;
 	height: 5px;
 	right: 0;
 	margin-right: -2px;
@@ -123,13 +123,13 @@
 
 @media(max-width: 991px){
 	.desktop-bnr-cntrl{
-		height: 380px;
+		height: 420px;
 	}
 }
 
 @media(max-width: 767px){
 	.main-content, .page-content{
-		min-height: 500px;
+		min-height: 700px;
 	}
 	.desktop-bnr-cntrl{
 		display: none;
@@ -140,7 +140,7 @@
 
 	.mobile-bnr-cntrl{
 		position: relative;
-		height: 330px;
+		height: 390px;
 		display: block;
 		width: 100%;
 	}
@@ -149,24 +149,27 @@
 
 @media(max-width: 639px){
 	.mobile-bnr-cntrl{
-		height: 300px;
+		height: 330px;
 	}
 }
 
 @media(max-width: 575px){
 	.mobile-bnr-cntrl{
-		height: 274px;
+		height: 300px;
 	}
 }
 
 @media(max-width: 479px){
 	.mobile-bnr-cntrl{
-		height: 200px;
+		height: 270px;
+	}
+	.main-content, .page-content{
+		min-height: 500px;
 	}
 }
 
 @media(max-width: 359px){
 	.mobile-bnr-cntrl{
-		height: 176px;
+		height: 250px;
 	}
 }

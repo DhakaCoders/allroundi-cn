@@ -255,6 +255,7 @@ ul li::before {
 }
 .default-page-con ol, ol {
 	padding: 0 46px 50px 0px;
+	margin: 0;
 	list-style: none;
 	counter-reset: my-awesome-counter;
 	-ms-counter-reset: my-awesome-counter;
