@@ -17,6 +17,19 @@
 </head>
 </head>
 <body <?php body_class(); ?>>
+<?php 
+  $logoObj = get_field('hdlogo', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+  $address = get_field('address', 'options');
+  $map_url = get_field('map_url', 'options');
+  $gmaplink = !empty($map_url)?$map_url: 'javascript:void()';
+  $telephone = get_field('telephone', 'options');
+  $email = get_field('email', 'options');
+?>	
 <div class="page-body-cntrl">
 <header class="header">
 	<div class="container">
@@ -24,31 +37,41 @@
       	<div class="col-md-12">
 	        <div class="header-inr clearfix">
 	          <div class="hdr-top">
-	            <div class="hdr-mail">
-	              <a href="mailto:info@domeinnaam.nl">info@domeinnaam.nl</a>
-	            </div>
-	            <div class="hdr-tel">
-	              <a href="tel:0599123456"> 0599 123 456</a>
-	            </div>
+				<?php 
+                  if( !empty( $email ) ) printf('<div class="hdr-mail"><a href="mailto:%s">%s</a></div>', $email, $email);
+                ?>
+                <?php 
+                  if( !empty($telephone) ) printf('<div class="hdr-tel"><a href="tel:%s">%s</a></div>', phone_preg($telephone), $telephone);
+                ?>
 	          </div>
 	          <div class="hdr-btm">
 	            <div class="hdr-lft">
-	              <div class="logo">
-	                <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-logo.png"></a>
-	              </div>
+	                <?php if( !empty($logo_tag) ): ?>
+	                <div class="logo">
+		               <a href="<?php echo esc_url(home_url('/')); ?>">
+	                    <?php echo $logo_tag; ?>
+	                   </a>
+	                </div>
+	                <?php endif; ?>
 	            </div>
 	            <div class="mobile-menu">
 	              <div class="resmenu">
 	                <div class="ressocial">
+	                  <?php if( !empty( $telephone ) ): ?>
 	                  <div class="resphone res">
-	                    <a href="tel:06 121 44 233"><img src="<?php echo THEME_URI; ?>/assets/images/moblie-tel.png"></a>
+	                    <a href="tel:<?php echo phone_preg($telephone); ?>"><img src="<?php echo THEME_URI; ?>/assets/images/moblie-tel.png"></a>
 	                  </div>
+	                  <?php endif; ?>
+	                  <?php if( !empty( $email ) ): ?>
 	                  <div class="resphone res">
-	                    <a href="tel:06 121 44 233"><img src="<?php echo THEME_URI; ?>/assets/images/mobile-mail.png"></a>
+	                    <a href="mailto:<?php echo $email; ?>"><img src="<?php echo THEME_URI; ?>/assets/images/mobile-mail.png"></a>
 	                  </div>
+	              	  <?php endif; ?>
+	              	  <?php if( !empty( $address ) ): ?>
 	                  <div class="resphone res">
-	                    <a href="tel:06 121 44 233"><img src="<?php echo THEME_URI; ?>/assets/images/mobile-location.png"></a>
+	                    <a href="<?php echo $gmaplink; ?>"><img src="<?php echo THEME_URI; ?>/assets/images/mobile-location.png"></a>
 	                  </div>
+	                  <?php endif; ?>
 	                </div>
 	                <div class="resnavbar">
 	                  <div class="resmenubar">
@@ -67,42 +90,30 @@
 	            <div class="hdr-rgt">
 	              	<div class="desktop-menu">
 		                <nav class="main-nav">
-			                  <ul class="clearfix reset-list">
-			                    <li class="current-menu-item"><a href="#">home</a></li>
-			                    <li><a href="#">over ons</a></li>
-			                    <li class="menu-item-has-children">
-			                      <a href="#">dropdown</a>
-			                      <ul class="clearfix reset-list sub-menu">
-			                        <li><a href="#">menu item 1</a></li>
-			                        <li><a href="#">menu item 2</a></li>
-			                        <li><a href="#">menu item 3</a></li>
-			                      </ul>
-			                    </li>
-			                    <li><a href="#">werkwijze</a></li>
-			                    <li><a href="#">blog</a></li>
-			                    <li><a href="#">contact</a></li>
-			                  </ul>
+		                <?php 
+		                  $mmenuOptions = array( 
+		                      'theme_location' => 'cbv_main_menu', 
+		                      'menu_class' => 'clearfix reset-list',
+		                      'container' => '',
+		                      'container_class' => ''
+		                    );
+		                  wp_nav_menu( $mmenuOptions ); 
+		                ?>
 		                </nav>
 	              	</div>    
 	            </div> 
 	          </div>
 	          	<div class="xs-mobile-menu">
 	              	<nav class="main-nav">
-		                <ul class="clearfix reset-list">
-		                  <li><a href="#">home</a></li>
-		                  <li><a href="#">over ons</a></li>
-		                  <li class="menu-item-has-children">
-		                      <a href="#">dropdown</a>
-		                      <ul class="clearfix reset-list sub-menu">
-		                    <li><a href="#">menu item 1</a></li>
-		                    <li><a href="#">menu item 2</a></li>
-		                    <li><a href="#">menu item 3</a></li>
-		                  </ul>
-		                  </li>
-		                  <li><a href="#">werkwijze</a></li>
-		                  <li><a href="#">blog</a></li>
-		                  <li><a href="#">contact</a></li>
-		                </ul>
+					<?php 
+	                  $mmenuOptions = array( 
+	                      'theme_location' => 'cbv_main_menu', 
+	                      'menu_class' => 'clearfix reset-list',
+	                      'container' => '',
+	                      'container_class' => ''
+	                    );
+	                  wp_nav_menu( $mmenuOptions ); 
+	                ?>
 	              	</nav>
 	            </div> 
 	        </div>

@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php 
+	get_header(); 
+	while( have_posts() ): the_post();
+?>
 <section class="banner-sec">
   	<div class="desktop-bnr-cntrl has-video">
 	    <div class="bnr-img">
@@ -54,23 +57,11 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="main-cnt-inner">
-					<h1 class="al-h1">Pagebuilder field here, HTML Title</h1>
-					<p>Paragraph text. This is a <strong>Strong text.</strong> This is a <a href="#">link tekst</a></p>
-					<ul>
-						<li>listings</li>
-						<li>listings</li>
-						<li>listings</li>
-					</ul>
-					<ol>
-						<li>jadhjad</li>
-						<li>jadhjad</li>
-						<li>jadhjad</li>
-					</ol>
-					<h2 class="al-h2">H2 title</h2>
-					<h3 class="al-h3">H3 Title</h3>
+					<?php the_content(); ?>
 				</div>
 			</div>
 		</div>
 	</div>    
 </section>
+<?php endwhile; ?>
 <?php get_footer(); ?>
