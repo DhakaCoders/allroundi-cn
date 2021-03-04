@@ -1,33 +1,9 @@
 <?php 
 get_header(); 
 while( have_posts()): the_post(); 
-	$thisID = get_the_ID();
+$thisID = get_the_ID();
 ?>
-<section class="breadcumbs">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="breadcumbs-inner">
-            <ul class="clearfix reset-list">
-              <li>
-                <a href="#" class="fl-home-icon">
-                  <span class="item">home</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="item">page</span>
-                </a>
-              </li>
-              <li class="active">
-                <a href="#"><span>subpage</span></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
+<?php get_template_part('templates/template', 'breadcrumbs'); ?>
 <?php 
  $showhide_sidebar = get_field('sidebarshowhide', $thisID);
   if($showhide_sidebar )
@@ -43,7 +19,7 @@ while( have_posts()): the_post();
           <div class="post-sec-cntrl">
             <div class="post-items<?php echo $fullwidth; ?>">
               <article class="post-item clearfix">
-                <div class="post-des">
+                <div class="post-single-des">
                   <h4><?php the_title(); ?></h4>
                   <?php the_content(); ?>
                 </div>

@@ -1,57 +1,47 @@
 <?php 
 	get_header(); 
 	while( have_posts() ): the_post();
+	$get_banner = get_field('hmbanner', HOMEID);
+	if( $get_banner ):
 ?>
 <section class="banner-sec">
   	<div class="desktop-bnr-cntrl has-video">
+  		<?php if( !empty($get_banner['image']) ): ?>
 	    <div class="bnr-img">
-	      <img src="<?php echo THEME_URI; ?>/assets/images/bnr-img.jpg" alt="">
+	      <?php echo cbv_get_image_tag($get_banner['image']); ?>
 	    </div>
+		<?php endif; ?>
+		<?php if( !empty($get_banner['mp4_video']) || !empty($get_banner['ogg_video'])): ?>
 	    <div class="bnr-video">
 	      <video id="vdo-lg" autoplay >
-	        <source src="<?php echo THEME_URI; ?>/assets/video/Placeholder Video.mp4" type="video/mp4">
-	        <source src="<?php echo THEME_URI; ?>/assets/video/Placeholder Video.ogg" type="video/ogg">
+      	<?php 
+	      	if( !empty($get_banner['mp4_video'])) printf('<source src="%s" type="video/mp4">', $get_banner['mp4_video']); 
+	      	if( !empty($get_banner['ogg_video'])) printf('<source src="%s" type="video/ogg">', $get_banner['ogg_video']); 
+      	?>
 	      </video>
 	    </div>
+	    <?php endif; ?>
   	</div>
   	<div class="mobile-bnr-cntrl has-video">
+  		<?php if( !empty($get_banner['image']) ): ?>
 	    <div class="bnr-img">
-	      <img src="<?php echo THEME_URI; ?>/assets/images/bnr-img.jpg" alt="">
+	      <?php echo cbv_get_image_tag($get_banner['image']); ?>
 	    </div>
+		<?php endif; ?>
+		<?php if( !empty($get_banner['mp4_video']) || !empty($get_banner['ogg_video'])): ?>
 	    <div class="bnr-video">
 	      <video id="vdo-lg" autoplay >
-	        <source src="<?php echo THEME_URI; ?>/assets/video/Placeholder Video.mp4" type="video/mp4">
-	        <source src="<?php echo THEME_URI; ?>/assets/video/Placeholder Video.ogg" type="video/ogg">	
+		    <?php 
+		      	if( !empty($get_banner['mp4_video'])) printf('<source src="%s" type="video/mp4">', $get_banner['mp4_video']); 
+		      	if( !empty($get_banner['ogg_video'])) printf('<source src="%s" type="video/ogg">', $get_banner['ogg_video']); 
+	      	?>
 	      </video>
-	    </div>          
+	    </div> 
+	    <?php endif; ?>         
   	</div>
 </section>
-
-<section class="breadcumbs">
-  	<div class="container">
-	    <div class="row">
-	      <div class="col-md-12">
-	        <div class="breadcumbs-inner">
-	          <ul class="clearfix reset-list">
-	            <li>
-	              <a href="#" class="fl-home-icon">
-	                <span class="item">home</span>
-	              </a>
-	            </li>
-	            <li>
-	              <a href="#">
-	                <span class="item">page</span>
-	              </a>
-	            </li>
-	            <li class="active">
-	              <a href="#"><span>subpage</span></a>
-	            </li>
-	          </ul>
-	        </div>
-	      </div>
-	    </div>
-  	</div>
-</section>
+<?php endif; ?>
+<?php get_template_part('templates/template', 'breadcrumbs'); ?>
 <section class="main-content">
 	<div class="container">
 		<div class="row">
