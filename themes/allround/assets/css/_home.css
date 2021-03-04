@@ -30,11 +30,11 @@
 }
 .mobile-bnr-cntrl{
 	display: none;
-	}
-.has-video .bnr-img,
+}
+/*.has-video .bnr-img,
 .bnr-video{
 	display: none;
-}
+}*/
 .has-video .bnr-video{
 	display: block;
 }
