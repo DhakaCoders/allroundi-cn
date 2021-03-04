@@ -237,11 +237,15 @@ Start blog
 	padding-bottom: 15px;
 }
 /*search*/
-.right-sidebar .widget_search{
+.search-form label{
+	display: block;
+	position: relative;
+}
+.right-sidebar .sidebar-widget{
 	position: relative;
 	margin-bottom: 40px;
 }
-.right-sidebar  .widget_search input[type="search"]{
+.right-sidebar  .sidebar-widget input[type="search"]{
 	border: 1px solid #E6E6E6;
 	padding: 8px 10px 8px 40px;
 	width: 100%;
@@ -253,7 +257,7 @@ Start blog
 	border: 1px solid #000;
 	border-radius: 2px;
 }
-.right-sidebar .widget_search input[type="submit"]{
+.right-sidebar .sidebar-widget input[type="submit"]{
 	position: absolute;
 	background: url(../images/search-icon.png);
 	background-repeat: no-repeat;
@@ -269,6 +273,6 @@ Start blog
 .right-sidebar .screen-reader-text{
 	display: none;
 }
-.right-sidebar .widget_search label{
+.right-sidebar .sidebar-widget label{
 	width: 100%;
 }
