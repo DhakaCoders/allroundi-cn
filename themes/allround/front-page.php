@@ -3,15 +3,16 @@
 	while( have_posts() ): the_post();
 	$get_banner = get_field('hmbanner', HOMEID);
 	if( $get_banner ):
+	$is_video = (!empty($get_banner['mp4_video']) || !empty($get_banner['ogg_video']))? true : false;
 ?>
 <section class="banner-sec">
   	<div class="desktop-bnr-cntrl has-video">
-  		<?php if( !empty($get_banner['image']) ): ?>
+  		<?php if( !empty($get_banner['image']) && !$is_video ): ?>
 	    <div class="bnr-img">
 	      <?php echo cbv_get_image_tag($get_banner['image']); ?>
 	    </div>
 		<?php endif; ?>
-		<?php if( !empty($get_banner['mp4_video']) || !empty($get_banner['ogg_video'])): ?>
+		<?php if( $is_video ): ?>
 	    <div class="bnr-video">
 	      <video id="vdo-lg" autoplay >
       	<?php 
@@ -23,12 +24,12 @@
 	    <?php endif; ?>
   	</div>
   	<div class="mobile-bnr-cntrl has-video">
-  		<?php if( !empty($get_banner['image']) ): ?>
+  		<?php if( !empty($get_banner['image']) && !$is_video ): ?>
 	    <div class="bnr-img">
 	      <?php echo cbv_get_image_tag($get_banner['image']); ?>
 	    </div>
 		<?php endif; ?>
-		<?php if( !empty($get_banner['mp4_video']) || !empty($get_banner['ogg_video'])): ?>
+		<?php if( $is_video ): ?>
 	    <div class="bnr-video">
 	      <video id="vdo-lg" autoplay >
 		    <?php 
