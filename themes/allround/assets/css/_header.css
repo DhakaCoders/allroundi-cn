@@ -36,6 +36,7 @@
 	height: 9px;
 	left: 0;
 	top: 50%;
+	margin-top: -1px;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
@@ -156,13 +157,7 @@ nav.main-nav > ul > li.menu-item-has-children >	ul.sub-menu > li a{
 	color: #343434;
 }
 /* == sub menu end == */
-nav.main-nav > ul > li.current-menu-item > a{
 
-}
-
-nav.main-nav > ul > li.menu-item-has-children > a{
-
-}
 /*====================*/
 	/*= hamburger  =*/
 	/*===================*/
@@ -373,7 +368,7 @@ nav.main-nav > ul > li.menu-item-has-children > a{
 		-moz-box-shadow: initial;
 		box-shadow: initial;
         width: 100%;
-        display: block;
+        display: none;
         padding: 0;
         background: none;        
 	}
@@ -408,11 +403,10 @@ nav.main-nav > ul > li.menu-item-has-children > a{
         top: 10px;
     }
     .close-icon span:nth-child(2){
-        
-        display: none;
+    	display: none;
         content: none;
     }
-    .close-icon span:nth-child(3){
+    .close-icon span:nth-child(3){        
         transform: rotate(-45deg);
         top: 10px;
     }     
@@ -426,6 +420,9 @@ nav.main-nav > ul > li.menu-item-has-children > a{
 }
 
 @media(max-width: 479px){
+	nav.main-nav > ul > li{
+		padding-bottom: 20px;
+	}
 	.resmenu{
 		justify-content: center;
 		margin: 0;

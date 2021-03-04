@@ -15,8 +15,16 @@ $(".hamburger-btn").click(function(){
   //   e.preventDefault();
   //   $('li.menu-item-has-children > a').parents().siblings().find('.sub-menu').slideUp(300);
   // });
-	
-  
+
+	//pagination
+  $(".next").click(function(){
+    $(".prev").addClass("opacity");
+    $(this).removeClass("opacity");
+  });
+   $(".prev").click(function(){
+    $(".next").addClass("opacity");
+    $(this).removeClass("opacity");
+  });
 //matchHeightCol
 if($('.mHc').length){
   $('.mHc').matchHeight();

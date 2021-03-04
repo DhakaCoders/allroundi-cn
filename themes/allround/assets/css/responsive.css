@@ -36,6 +36,15 @@
 	.show-md{
 		display: block!important;
 	}
+	h1, .al-h1{
+		font-size: 35px;
+	}
+	h2, .al-h2{
+		font-size: 29px;
+	}
+	h3, .al-h3{
+		font-size: 23px;
+	}
 	.page-404 h1{
 		font-size: 44px;
 	}
@@ -96,7 +105,7 @@
 		font-size: 17px;
 	}
 	h1, .al-h1{
-		font-size: 35px;
+		font-size: 31px;
 	}
 	h2, .al-h2{
 		font-size: 28px;
@@ -135,23 +144,32 @@
 		font-size: 29px;
 	}
 	h2, .al-h2{
-		font-size: 26px;
+		font-size: 27px;
 	}
 	h3, .al-h3{
-		font-size: 20px;
+		font-size: 21px;
+	}
+	ul, ol{
+		padding-bottom: 30px;
 	}
 
 }
 
 @media(max-width: 479px){
+	h1,h2,h3,h4,h5,h6{
+		line-height: 1.2;
+	}
 	h1, .al-h1{
-		font-size: 27px;
+		font-size: 28px;
 	}
 	h2, .al-h2{
-		font-size: 25px;
+		font-size: 26px;
 	}
 	p{
 		line-height: 1.2;
+	}
+	ul, ol{
+		padding-bottom: 25px;
 	}
 	.page-404 h1{
 		font-size: 38px;
@@ -160,5 +178,10 @@
 }
 
 @media(max-width: 359px){
-
+	h1, .al-h1{
+		font-size: 27px;
+	}
+	h2, .al-h2{
+		font-size: 25px;
+	}
 }
