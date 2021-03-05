@@ -20,14 +20,14 @@ $thisID = get_the_ID();
             <div class="post-items<?php echo $fullwidth; ?>">
               <article class="post-item clearfix">
                 <div class="post-single-des">
-                  <h4><?php the_title(); ?></h4>
+                  <h1><?php the_title(); ?></h1>
                   <?php the_content(); ?>
                 </div>
               </article>
             </div>    
             <?php if( !$showhide_sidebar ): ?>
             <div class="right-sidebar mgleftm">
-            	<?php get_sidebar(); ?>
+              <?php get_sidebar(); ?>
             </div>
             <?php endif; ?>
           </div>

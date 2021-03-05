@@ -69,7 +69,7 @@
 	              	  <?php endif; ?>
 	              	  <?php if( !empty( $address ) ): ?>
 	                  <div class="resphone res">
-	                    <a href="<?php echo $gmaplink; ?>"><img src="<?php echo THEME_URI; ?>/assets/images/mobile-location.png"></a>
+	                    <a target="_blank" href="<?php echo $gmaplink; ?>"><img src="<?php echo THEME_URI; ?>/assets/images/mobile-location.png"></a>
 	                  </div>
 	                  <?php endif; ?>
 	                </div>
@@ -104,7 +104,7 @@
 	            </div> 
 	          </div>
 	          	<div class="xs-mobile-menu">
-	              	<nav class="main-nav">
+	              	<nav class="main-nav show-sm">
 					<?php 
 	                  $mmenuOptions = array( 
 	                      'theme_location' => 'cbv_main_menu', 
