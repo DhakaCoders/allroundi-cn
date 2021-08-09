@@ -2,8 +2,9 @@
 	get_header(); 
 	while( have_posts() ): the_post();
 	$get_banner = get_field('hmbanner', HOMEID);
-	if( $get_banner ):
+	if( isset($get_banner) ):
 	$is_video = (!empty($get_banner['mp4_video']) || !empty($get_banner['ogg_video']))? true : false;
+if( !empty($get_banner['mp4_video']) || !empty($get_banner['ogg_video']) || $get_banner['image'] ):
 ?>
 <section class="banner-sec">
   	<div class="desktop-bnr-cntrl has-video">
@@ -41,6 +42,7 @@
 	    <?php endif; ?>         
   	</div>
 </section>
+<?php endif; ?>
 <?php endif; ?>
 <?php get_template_part('templates/template', 'breadcrumbs'); ?>
 <section class="main-content">
