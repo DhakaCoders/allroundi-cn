@@ -30,10 +30,10 @@
               <div class="ftr-contact">
                 <?php if( !empty($address) ): ?>
                 <div class="ftr-col-1">
-	                <div class="ftr-adres">
-	                  <span>adres:</span>
-	                  <a href="<?php echo $gmaplink; ?>"><?php echo $address; ?></a>              
-	                </div>
+                  <div class="ftr-adres">
+                    <span>adres:</span>
+                    <a target="_blank" href="<?php echo $gmaplink; ?>"><?php echo $address; ?></a>              
+                  </div>
                 </div>
                 <?php endif; ?>
                 <div class="ftr-col-2">

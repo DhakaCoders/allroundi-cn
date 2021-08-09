@@ -87,15 +87,15 @@ nav.main-nav > ul > li:not(:last-child):after{
 	content: "";
 	width: 2px;
 	height: 7px;
-	background-image: url('../images/main-menu-border.png');
+	background: #8c8c8c;
 	background-repeat: no-repeat;
 	right: 0;
 	top: 50%;
-	margin-top: -2.5px;
 	margin-right: -1px;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
+	margin-top: -2.5px
 }
 nav.main-nav > ul > li > a{
 	color: #343434;
@@ -215,15 +215,21 @@ nav.main-nav > ul > li.menu-item-has-children >	ul.sub-menu > li a{
 	nav.main-nav > ul > li > a{
 		font-size: 17px;
 	}
+	.logo {
+        max-width: 410px;
+	}
+	.hdr-rgt{
+	    padding-top: 28px;
+	}
 }
 
 @media(max-width: 991px){
 	.logo{
-		max-width: 465px;
+		max-width: 285px;
 	}
-	.hdr-rgt{
-		padding-top: 30px;
-	}
+	.hdr-rgt {
+        padding-top: 18px;
+    }
 	nav.main-nav > ul{
 		margin: 0 -7px;
 	}
@@ -238,23 +244,7 @@ nav.main-nav > ul > li.menu-item-has-children >	ul.sub-menu > li a{
 	}
 }
 
-@media(max-width: 900px){
-	.logo{
-		max-width: 365px;
-	}
-	.hdr-rgt{
-		padding-top: 20px;
-	}
-}
 
-@media(max-width: 800px){
-	.logo{
-		max-width: 330px;
-	}
-	.hdr-rgt{
-		padding-top: 19px;
-	}
-}
 
 @media(max-width: 767px){
 	.header{
@@ -352,7 +342,7 @@ nav.main-nav > ul > li.menu-item-has-children >	ul.sub-menu > li a{
 		font-weight: 700;
 		color: #fff;
 		text-transform: capitalize;
-		font-size: 29px;
+		font-size: 28px;
 	}
 	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 		position: initial;
@@ -386,7 +376,7 @@ nav.main-nav > ul > li.menu-item-has-children >	ul.sub-menu > li a{
 		padding-bottom: 32px;
 	}
 	nav.main-nav > ul > li > a{
-		font-size: 39px;
+		font-size: 38px;
 		line-height: 1;
 		padding-bottom: 0;
 	}
@@ -440,7 +430,12 @@ nav.main-nav > ul > li.menu-item-has-children >	ul.sub-menu > li a{
 	.resnavbar{
 		margin-left: 1px;
 	}
-
+    nav.main-nav > ul > li > a {
+        font-size: 36px;
+    }
+    nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li a{
+        font-size: 28px;
+    }
 }
 
 @media(max-width: 359px){

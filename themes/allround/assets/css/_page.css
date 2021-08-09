@@ -212,6 +212,12 @@ Start blog
 	padding-bottom: 10px;
 	margin-top: -3px
 }
+.post-des h4 a{
+    color: #303037;
+}
+.post-des h4 a:hover{
+    color: #e61c29;
+}
 .sidebar-widget h4{
 	border-bottom: 1px solid #ccc;
 	margin-bottom: 15px;

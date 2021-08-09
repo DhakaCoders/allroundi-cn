@@ -91,8 +91,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #007bff;
-    border: 2px solid #007bff;
+    background: #e61c29;
+    border: 2px solid #e61c29;
     font-size: 16px;
     line-height: 19px;
     padding: 10px 5px;
@@ -101,7 +101,7 @@
 }
 .cnt-form-btn:hover{
 	background: transparent;
-	color: #007bff;
+	color: #e61c29;
 }
 
 

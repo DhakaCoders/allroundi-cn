@@ -72,6 +72,7 @@
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
+	margin-top: 1px;
 }
 /* ftr-btm */
 .copyright{
@@ -206,5 +207,7 @@
 }
 
 @media(max-width: 359px){
-
+	.ftr-adres span, .ftr-tel span, .ftr-mail span {
+	    width: 90px;
+	}
 }
